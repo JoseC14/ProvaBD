@@ -61,7 +61,9 @@
   
   UPDATE vendas set Preco_UN = 24 WHERE Preco_UN=60;
 
-  SELECT * FROM vendas WHERE Nome_produto LIKE'X%' OR Nome_produto LIKE'F%' OR Nome_produto LIKE 'G%';
+  SELECT Nome_produto FROM vendas WHERE Nome_produto LIKE'X%' OR Nome_produto LIKE'F%' OR Nome_produto LIKE 'G%';
+  
+  SELECT Nome_produto FROM vendas WHERE LENGTH(Nome_produto)=14 AND Nome_produto LIKE'CA%';
 
   
    
