@@ -20,7 +20,7 @@
    values(2,'022','José Marcos','45','15','Ventilador','70.00','2019/03/15');
 
    insert into vendas
-   values(3,'034','Túlio Milionário','30','20','Geladeira Consul','1499,00','2018/03/02');
+   values(3,'034','Túlio Milionário','30','20','Geladeira Consul','1499.00','2018/03/02');
 
   insert into vendas
    values(4,'045','Júnior Vianna','32','09','Ferro Philips','59.89','2018/02/18');
@@ -58,6 +58,10 @@
   SELECT Nome, Nome_produto FROM vendas WHERE Idade>50;
 
   SELECT Nome_produto FROM vendas WHERE Nome_produto LIKE'F%' AND Preco_UN<499.00;
+  
+  UPDATE vendas set Preco_UN = 24 WHERE Preco_UN=60;
+
+  SELECT * FROM vendas WHERE Nome_produto LIKE'X%' OR Nome_produto LIKE'F%' OR Nome_produto LIKE 'G%';
 
   
    
