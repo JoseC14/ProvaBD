@@ -59,7 +59,9 @@
 
   SELECT Nome_produto FROM vendas WHERE Nome_produto LIKE'F%' AND Preco_UN<499.00;
   
-  UPDATE vendas set Preco_UN = 24 WHERE Preco_UN=60;
+  UPDATE vendas set Preco_UN = Preco_UN/10*4 WHERE Preco_UN=60;
+
+  UPDATE vendas set Preco_UN = 60 WHERE Preco_UN = 24;
 
   SELECT Nome_produto FROM vendas WHERE Nome_produto LIKE'X%' OR Nome_produto LIKE'F%' OR Nome_produto LIKE 'G%';
   
